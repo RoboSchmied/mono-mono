@@ -3701,7 +3701,7 @@ CORECLR_TESTLIBRARY_CS_SRC = 	\
 	$(CORECLR_PATH)/tests/src/Common/CoreCLRTestLibrary/Utilities.cs	\
 	$(CORECLR_PATH)/tests/src/Common/CoreCLRTestLibrary/CalendarHelpers.cs	\
 	$(CORECLR_PATH)/tests/src/Common/CoreCLRTestLibrary/Generator.cs	\
-	$(CORECLR_PATH)/tests/src/Common/CoreCLRTestLibrary/EndianessChecker.cs	\
+	$(CORECLR_PATH)/tests/src/Common/CoreCLRTestLibrary/EndiannessChecker.cs	\
 	$(CORECLR_PATH)/tests/src/Common/CoreCLRTestLibrary/GlobLocHelper.cs	\
 	$(CORECLR_PATH)/tests/src/Common/CoreCLRTestLibrary/Logging.cs
 

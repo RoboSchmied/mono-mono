@@ -497,7 +497,7 @@ namespace System.Text
                 {
                     // No fallback, maybe we can do it fast
 #if !NO_FAST_UNICODE_LOOP
-					// If endianess is backwards then each pair of bytes would be backwards.
+					// If endianness is backwards then each pair of bytes would be backwards.
                     if ( (bigEndian ^ BitConverter.IsLittleEndian) &&
 
 #if WIN64           // 64 bit CPU needs to be long aligned for this to work.
@@ -774,7 +774,7 @@ namespace System.Text
                 {
                     // No fallback, maybe we can do it fast
 #if !NO_FAST_UNICODE_LOOP
-					// If endianess is backwards then each pair of bytes would be backwards.
+					// If endianness is backwards then each pair of bytes would be backwards.
                     if ( (bigEndian ^ BitConverter.IsLittleEndian) &&
 #if WIN64           // 64 bit CPU needs to be long aligned for this to work, 32 bit CPU needs to be 32 bit aligned
                         (unchecked((long)chars) & 7) == 0 && (unchecked((long)bytes) & 7) == 0 &&

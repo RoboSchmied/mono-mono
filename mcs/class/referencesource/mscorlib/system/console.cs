@@ -435,7 +435,7 @@ namespace System {
 
 #if !FEATURE_CORECLR
         // We cannot simply compare the encoding to Encoding.Unicode bacasue it incorporates BOM
-        // and we do not care about BOM. Instead, we compare by class, codepage and little-endianess only:
+        // and we do not care about BOM. Instead, we compare by class, codepage and little-endianness only:
         private static bool IsStandardConsoleUnicodeEncoding(Encoding encoding) {
 
             UnicodeEncoding enc = encoding as UnicodeEncoding;

@@ -81,7 +81,7 @@
   this can be done just for locals as a start, so that at least
   part of the stack is handled precisely.
 
- *) test/fix endianess issues
+ *) test/fix endianness issues
 
  *) Implement a card table as the write barrier instead of remembered
     sets?  Card tables are not easy to implement with our current

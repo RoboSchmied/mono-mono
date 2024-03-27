@@ -1145,7 +1145,7 @@ if (!BitConverter.IsLittleEndian) {
                             goto LongCodeWithMask;
                         }
 
-                        // Unfortunately, this is endianess sensitive
+                        // Unfortunately, this is endianness sensitive
 if (!BitConverter.IsLittleEndian) {
                         *pTarget = (byte)(ch>>16);
                         *(pTarget+1) = (byte)ch;
@@ -1977,7 +1977,7 @@ if (!BitConverter.IsLittleEndian) {
                             goto LongCodeWithMask16;
                         }
 
-                        // Unfortunately, this is endianess sensitive
+                        // Unfortunately, this is endianness sensitive
 if (!BitConverter.IsLittleEndian) {
                         *pTarget = (char)((ch >> 8) & 0x7F);
                         pSrc += 2;
@@ -1999,7 +1999,7 @@ if (!BitConverter.IsLittleEndian) {
                             goto LongCodeWithMask32;
                         }
 
-                        // Unfortunately, this is endianess sensitive
+                        // Unfortunately, this is endianness sensitive
 if (!BitConverter.IsLittleEndian) {
                         *pTarget = (char)((ch >> 24) & 0x7F);
                         *(pTarget+1) = (char)((ch >> 16) & 0x7F);

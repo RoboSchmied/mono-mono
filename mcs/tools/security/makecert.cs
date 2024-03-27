@@ -420,7 +420,7 @@ namespace Mono.Tools {
 					p12.Password = p12pwd;
 
 					ArrayList list = new ArrayList ();
-					// we use a fixed array to avoid endianess issues 
+					// we use a fixed array to avoid endianness issues 
 					// (in case some tools requires the ID to be 1).
 					list.Add (new byte [4] { 1, 0, 0, 0 });
 					Hashtable attributes = new Hashtable (1);

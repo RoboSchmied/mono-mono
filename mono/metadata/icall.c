@@ -8067,7 +8067,7 @@ ves_icall_System_ArgIterator_IntGetNextArgWithType (MonoArgIterator *iter, MonoT
 			continue;
 		res->type = iter->sig->params [i];
 		res->klass = mono_class_from_mono_type_internal (res->type);
-		/* FIXME: endianess issue... */
+		/* FIXME: endianness issue... */
 		arg_size = mono_type_stack_size (res->type, &align);
 #if defined(__arm__) || defined(__mips__)
 		iter->args = (guint8*)(((gsize)iter->args + (align) - 1) & ~(align - 1));

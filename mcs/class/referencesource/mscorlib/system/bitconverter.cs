@@ -40,7 +40,7 @@ namespace System {
             return (b [0] == 0);
         }
 #else
-        // This field indicates the "endianess" of the architecture.
+        // This field indicates the "endianness" of the architecture.
         // The value is set to true if the architecture is
         // little endian; false if it is big endian.
 #if BIGENDIAN

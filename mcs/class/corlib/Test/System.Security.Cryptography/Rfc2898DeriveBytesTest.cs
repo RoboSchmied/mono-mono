@@ -247,7 +247,7 @@ namespace MonoTests.System.Security.Cryptography {
 		{
 			string expected = "0B-40-39-04-B9-2B-F1-B9-C0-A0-64-E6-03-0A-5E-42-4B-88-1E-5E-94-8F-77-87-16-A6-C4-9E-E6-C7-6D-38";
 			Rfc2898DeriveBytes pkcs5 = new Rfc2898DeriveBytes ("password", salt, 5);
-			// this will overflow F on multiple bytes (where endianess comes to play)
+			// this will overflow F on multiple bytes (where endianness comes to play)
 			byte[] key = pkcs5.GetBytes (32768);
 			// just check the last 32 bytes
 			string actual = BitConverter.ToString (key, key.Length - 32);
